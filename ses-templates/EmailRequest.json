@@ -1,0 +1,5 @@
+{
+  "template": "VerifyEmail",
+  "destination": "info@titsonfire.store",
+  "templateData": { "name":"Maxim", "code": "3eQF" }
+}

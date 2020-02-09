@@ -1,0 +1,10 @@
+{
+  "Source": "info@titsonfire.store",
+  "Template": "MyTemplate",
+  "ConfigurationSetName": "configset-ses",
+  "Destination": {
+    "ToAddresses": [ "info@titsonfire.store"
+    ]
+  },
+  "TemplateData": "{ \"name\":\"Maxim\", \"favoriteanimal\": \"Dog\" }"
+}

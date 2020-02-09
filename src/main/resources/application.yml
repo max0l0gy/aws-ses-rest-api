@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: aws-ses-rest-api
+  profiles:
+    active: dev
+
+server:
+  port: 8081
+
+ses:
+  source: "info@titsonfire.store"
+  set: "configset-ses"
+
