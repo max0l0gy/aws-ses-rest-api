@@ -1,0 +1,11 @@
+Hi {{name}}
+You paid for order number {{order-id}}
+
+You can monitor the delivery process in your profile on our site: https://{{site}}
+
+We will prepare, pack and ship the order within three days.
+As soon as we send you your order, you will receive a letter from us with information about this fact and tracking information about the package.
+
+
+Sincerely,
+The {{site}} Team.

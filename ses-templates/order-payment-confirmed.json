@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "OrderPaymentConfirmed",
+    "SubjectPart": "Your order #{{order-id}} is accepted",
+    "HtmlPart": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\n    <link rel=\"stylesheet\" href=\"https://code.getmdl.io/1.3.0/material.indigo-pink.min.css\">\n    <meta charset='UTF-8'>\n    <title>Order #{{name}}</title>\n</head>\n<body>\n<p>\nHi {{name}}<br/>\nYou paid for order number <b>{{order-id}}</b><br/>\n</p>\n<p>\nYou can monitor the delivery process in your profile on our site: <a href=\"https://{{site}}\" target=\"_blank\">{{site}}</a><br/>\n<br/>\n</p>\n<b>We will prepare, pack and ship the order within three days.</b><br/>\nAs soon as we send you your order, you will receive a letter from us with information about this fact and tracking information about the package.\n<br/>\n<br>\n<br/>\nSincerely,<br/>\nThe <a href=\"https://{{site}}\">{{site}}</a> Team.\n</p>\n</body>\n</html>",
+    "TextPart": "Hi {{name}}\nYou paid for order number {{order-id}}\n\nYou can monitor the delivery process in your profile on our site: https://{{site}}\n\nWe will prepare, pack and ship the order within three days.\nAs soon as we send you your order, you will receive a letter from us with information about this fact and tracking information about the package.\n\n\nSincerely,\nThe {{site}} Team."
+  }
+}

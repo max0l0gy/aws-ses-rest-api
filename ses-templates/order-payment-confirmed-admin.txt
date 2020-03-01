@@ -1,0 +1,9 @@
+Dear Admin
+
+Order # {{order-id}} paid.
+
+Take a look at the administrative console and process the order.
+We promised to send the order within three days,
+Do not upset the buyer.
+
+With love Your mail robot.

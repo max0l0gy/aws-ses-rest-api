@@ -1,0 +1,10 @@
+{
+  "Source": "info@titsonfire.store",
+  "Template": "OrderPaymentConfirmedAdmin",
+  "ConfigurationSetName": "configset-ses",
+  "Destination": {
+    "ToAddresses": [ "info@titsonfire.store"
+    ]
+  },
+  "TemplateData": "{ \"order-id\": \"999-100\"}"
+}

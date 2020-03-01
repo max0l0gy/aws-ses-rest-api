@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "VerifyEmail",
+    "SubjectPart": "Greetings, {{name}}!",
+    "HtmlPart": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\n    <link rel=\"stylesheet\" href=\"https://code.getmdl.io/1.3.0/material.indigo-pink.min.css\">\n    <meta charset='UTF-8'>\n    <title>Confirm email #{{name}}</title>\n</head>\n<p>\nDear {{name}}\n</p>\n<br/>\n<p>\nWelcome to the world of unique things.<br/>\nTo make purchases, confirm your email.\n</p>\n<br/>\n<p>\nCopy your Verification code:\n<h3>\n    <b>{{code}}</b>\n</h3>\nAnd paste in the mail verification form\n</p>\n<br/>\n<p>\nSincerely,<br/>\nThe https://{{site}} Team.\n</p>\n</body>\n</html>",
+    "TextPart": "Dear {{name}}\n\nWelcome to the world of unique things.\nTo make purchases, confirm your email.\n\nCopy your Verification code:\n{{code}}\nAnd paste in the mail verification form\n\n\nSincerely,\nThe https://{{site}} Team.\n"
+  }
+}

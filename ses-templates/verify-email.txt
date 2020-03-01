@@ -1,0 +1,11 @@
+Dear {{name}}
+
+Welcome to the world of unique things.
+To make purchases, confirm your email.
+
+Copy your Verification code:
+{{code}}
+And paste in the mail verification form
+
+Sincerely,
+The https://{{site}} Team.
