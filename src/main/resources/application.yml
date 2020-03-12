@@ -5,9 +5,18 @@ spring:
     active: dev
 
 server:
-  port: 8081
+  port: 8080
 
 ses:
   source: "info@titsonfire.store"
   set: "configset-ses"
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics
+  metrics:
+    export:
+      atlas:
+        enabled: false

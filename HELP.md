@@ -1,26 +1,45 @@
 # Read Me First
-The following was discovered as part of building this project:
+The steps for building this project ant pull to kubernetes:
 
-* The original package name 'ru.maxmorev.aws-ses-rest-api' is invalid and this project uses 'ru.maxmorev.awssesrestapi' instead.
+Test app:
 
-# Getting Started
+docker build -t maxmorev/aws-ses-rest-api .
 
-### Reference Documentation
-For further reference, please consider the following sections:
+docker images
+````
+docker run  -p 8081:8080 \
+-e AWS_ACCESS_KEY_ID='YOUR-ID' \
+-e AWS_SECRET_ACCESS_KEY='YOUR-KEY' \
+-e AWS_REGION='YOUR-REGION' \
+--name aws-ses-rest-api
+````
+docker container exec -it aws-ses-rest-api sh
 
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.3.0.M1/gradle-plugin/reference/html/)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/reference/htmlsingle/#boot-features-developing-web-applications)
+docker login
 
-### Guides
-The following guides illustrate how to use some features concretely:
+docker push maxmorev/aws-ses-rest-api
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
+kubectl apply -f secret.yaml
 
-### Additional Links
-These additional references should also help you:
+kubectl get secret aws-secrets -o yaml
 
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
+kubectl apply -f service.yaml
+
+kubectl create deployment aws-ses-rest-api --image=maxmorev/aws-ses-rest-api
+
+kubectl get pods
+````
+NAME                                READY   STATUS    RESTARTS   AGE
+aws-ses-rest-api-66d8656456-wxrmw   1/1     Running   0          28s
+aws-ses-rest-api-66d8656456-xpwnb   1/1     Running   0          28s
+
+````
+kubectl get svc 
+````
+NAME               TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+aws-ses-rest-api   ClusterIP   10.245.164.220   <none>        8080/TCP   13m
+````
+Exece shell:
+
+kubectl exec -t -i aws-ses-rest-api-66d8656456-wxrmw sh
 
