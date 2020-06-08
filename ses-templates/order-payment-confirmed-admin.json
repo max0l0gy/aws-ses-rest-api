@@ -2,7 +2,7 @@
   "Template": {
     "TemplateName": "OrderPaymentConfirmedAdmin",
     "SubjectPart": "Order # {{order-id}} paid.",
-    "HtmlPart": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\n    <link rel=\"stylesheet\" href=\"https://code.getmdl.io/1.3.0/material.indigo-pink.min.css\">\n    <meta charset='UTF-8'>\n    <title>Order #{{order-id}} paid</title>\n</head>\n<body>\n<p>Dear Admin</p>\n<br/>\n<p>\nOrder # <b>{{order-id}}</b> paid.\n</p>\n<br/>\n<p>\nTake a look at the administrative console and process the order.<br/>\nWe promised to send the order within three days,</br>\nDo not upset the buyer.\n</p>\n<br/>\n<p>\nWith love Your mail robot.\n</p>\n</body>\n</html>",
+    "HtmlPart": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\n    <link rel=\"stylesheet\" href=\"https://code.getmdl.io/1.3.0/material.indigo-pink.min.css\">\n    <meta charset='UTF-8'>\n    <title>Order #{{order-id}} paid</title>\n</head>\n<body>\n<p>Dear Admin</p>\n<br/>\n<p>\nOrder # <b>{{order-id}}</b> paid.\n</p>\n<br/>\n<p>\nTake a look at the administrative console and process the order.<br/>\nWe promised to send the order within three days,<br/>\nDo not upset the buyer.\n</p>\n<br/>\n<p>\nWith love Your mail robot.\n</p>\n</body>\n</html>",
     "TextPart": "Dear Admin\n\nOrder # {{order-id}} paid.\n\nTake a look at the administrative console and process the order.\nWe promised to send the order within three days,\nDo not upset the buyer.\n\nWith love Your mail robot.\n"
   }
 }

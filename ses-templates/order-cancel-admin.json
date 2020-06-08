@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "OrderPaymentCanceledAdmin",
+    "SubjectPart": "Order #{{order-id}} is canceled",
+    "HtmlPart": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\n    <link rel=\"stylesheet\" href=\"https://code.getmdl.io/1.3.0/material.indigo-pink.min.css\">\n    <meta charset='UTF-8'>\n    <title>Order #{{order-id}} paid</title>\n</head>\n<body>\n<p>Dear Admin</p>\n<br/>\n<p>\n    Order # <b>{{order-id}}</b> canceled.<br/>\n    Order Price {{order-price}} {{order-price-currency}}<br/>\n</p>\n<br/>\n<p>\n    Take a look at the administrative console and process cancellation and refund.<br/>\n    We promised to return the funds within three days.<br/>\n    Do not upset the buyer.\n</p>\n<br/>\n<p>\n    With love Your mail robot.\n</p>\n</body>\n</html>",
+    "TextPart": "Dear Admin\n\nOrder # {{order-id}} canceled.\nOrder Price {{order-price}} {{order-price-currency}}\n\nTake a look at the administrative console and process cancellation and refund.\nWe promised to return the funds within three days.\nDo not upset the buyer.\n\nWith love Your mail robot.\n"
+  }
+}

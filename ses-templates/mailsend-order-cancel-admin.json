@@ -1,0 +1,10 @@
+{
+  "Source": "info@titsonfire.store",
+  "Template": "OrderPaymentCanceledAdmin",
+  "ConfigurationSetName": "configset-ses",
+  "Destination": {
+    "ToAddresses": [ "maxmorev@gmail.com"
+    ]
+  },
+  "TemplateData": "{ \"site\": \"titsonfire.store\", \"order-id\": \"999-100\", \"order-price\": \"45.0\", \"order-price-currency\": \"EUR\"}"
+}

@@ -1,0 +1,8 @@
+Hi {{name}}
+You have canceled order number {{order-id}}
+Order Price {{order-price}} {{order-price-currency}}
+
+We will refund your funds to you within three days.
+
+Sincerely,
+The {{site}} Team.

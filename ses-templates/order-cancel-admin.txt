@@ -1,0 +1,10 @@
+Dear Admin
+
+Order # {{order-id}} canceled.
+Order Price {{order-price}} {{order-price-currency}}
+
+Take a look at the administrative console and process cancellation and refund.
+We promised to return the funds within three days.
+Do not upset the buyer.
+
+With love Your mail robot.
