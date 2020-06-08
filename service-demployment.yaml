@@ -21,7 +21,7 @@ spec:
       app: aws-ses-rest-api
   strategy:
     type: Recreate
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -33,6 +33,13 @@ spec:
           ports:
             - containerPort: 8080
               name: springboot
+          resources:
+            requests:
+              memory: "300Mi"
+              cpu: "250m" # 1/4 core
+            limits:
+              memory: "400Mi"
+              cpu: "1000m" # 1 core
           readinessProbe:
             httpGet:
               path: /actuator/health

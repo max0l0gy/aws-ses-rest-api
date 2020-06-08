@@ -1,4 +1,6 @@
 # Read Me First
+https://github.com/burrsutter/9stepsawesome
+
 The steps for building this project ant pull to kubernetes:
 
 Test app:
