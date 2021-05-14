@@ -27,12 +27,12 @@ jobs:
         run: ./gradlew build
 
       - name: set environment variable APP_DOCKER_REPO
-        uses: allenevans/set-env@v1.0.0
-        with:
-          APP_DOCKER_REPO: maxmorev/aws-ses-rest-api
+        id: set-env-APP_DOCKER_REPO
+        run: |
+          echo "APP_DOCKER_REPO=maxmorev/aws-ses-rest-api" >> $GITHUB_ENV
 
       - name: Print name for docker repository
-        run: echo ${APP_DOCKER_REPO}
+        run: echo "APP_DOCKER_REPO=$APP_DOCKER_REPO"
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v1
