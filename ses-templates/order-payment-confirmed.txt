@@ -1,4 +1,4 @@
-Hi {{name}}
+Dear {{name}}
 You paid for order number {{order-id}}
 
 You can monitor the delivery process in your profile on our site: https://{{site}}

@@ -1,0 +1,10 @@
+{
+  "Source": "info@titsonfire.store",
+  "Template": "OrderPaymentConfirmed",
+  "ConfigurationSetName": "configset-ses",
+  "Destination": {
+    "ToAddresses": [ "maxmorev@yandex.ru"
+    ]
+  },
+  "TemplateData": "{  \"name\":\"Maxim Morev\", \"site\": \"titsonfire.store\", \"order-id\": \"999-100\"}"
+}

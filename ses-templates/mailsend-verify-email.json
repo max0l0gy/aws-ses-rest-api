@@ -3,8 +3,7 @@
   "Template": "VerifyEmail",
   "ConfigurationSetName": "configset-ses",
   "Destination": {
-    "ToAddresses": [ "maxmorev@gmail.com"
-    ]
+    "ToAddresses": [ "maxmorev@yandex.ru"]
   },
   "TemplateData": "{ \"name\":\"Maxim Morev\", \"site\": \"titsonfire.store\", \"code\": \"zXhD3\"}"
 }
