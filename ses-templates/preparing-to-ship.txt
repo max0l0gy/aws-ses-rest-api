@@ -1,0 +1,8 @@
+Dear {{name}}
+I am preparing your order {{order-id}} for shipment.
+As soon as I post your order, you will receive an email with a tracking number.
+
+Sincerely,
+Victoria.
+
+https://titsonfire.store
